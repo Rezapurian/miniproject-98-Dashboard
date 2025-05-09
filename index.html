@@ -111,11 +111,11 @@
         <!-- Header -->
         <header class="header">
           <div class="welcome-section">
-            <h1>Welcome to NexusBank</h1>
+            <h1 class="welcome-title">Welcome to NexusBank</h1>
             <p>Hi, CodeInfo. welcome Back</p>
           </div>
           <div class="header-actions">
-            <div class="header-btn them-toggle">
+            <div data-color="light" class="header-btn them-toggle">
               <i class="fa-solid fa-moon"></i>
             </div>
 
@@ -182,7 +182,9 @@
           <!-- Balance Section -->
           <div class="card balance-card">
             <div class="card-header">
-              <div class="card-title">Your Total Balance</div>
+              <div class="card-title" id="card-title-balance">
+                Your Total Balance
+              </div>
             </div>
 
             <div class="balance-amount">$123,343.67</div>
@@ -211,7 +213,7 @@
           </div>
 
           <!-- Transaction Section -->
-           <div class="card">
+          <div class="card transaction-card">
             <div class="card-header">
               <div class="card-title">Recent Transactions</div>
               <div class="card-action">Last 7 Days</div>
@@ -226,10 +228,12 @@
                   <div class="transaction-name">Paypal - Received</div>
                   <div class="transaction-date">01 March 2025, 10:00 AM</div>
                 </div>
-                <div class="transaction-amount amount-received">+ 123, 450.00</div>
+                <div class="transaction-amount amount-received">
+                  + 123, 450.00
+                </div>
               </div>
               <!-- Others items -->
-               <div class="transaction-item">
+              <div class="transaction-item">
                 <div class="transaction-icon spotify">
                   <i class="fa-brands fa-spotify"></i>
                 </div>
@@ -238,9 +242,9 @@
                   <div class="transaction-date">28 February 2025, 11:42 PM</div>
                 </div>
                 <div class="transaction-amount amount-paid">- $249.00</div>
-               </div>
+              </div>
 
-               <div class="transaction-item">
+              <div class="transaction-item">
                 <div class="transaction-icon transferwise">
                   <i class="fa-solid fa-exchange-alt"></i>
                 </div>
@@ -248,10 +252,12 @@
                   <div class="transaction-name">Wise Transfer - Received</div>
                   <div class="transaction-date">27 February 2025, 02:34 PM</div>
                 </div>
-                <div class="transaction-amount amount-received">+ $3,750.00</div>
-               </div>
+                <div class="transaction-amount amount-received">
+                  + $3,750.00
+                </div>
+              </div>
 
-               <div class="transaction-item">
+              <div class="transaction-item">
                 <div class="transaction-icon h-and-m">
                   <i class="fa-solid fa-shopping-bag"></i>
                 </div>
@@ -260,32 +266,31 @@
                   <div class="transaction-date">25 February 2025, 09:15 AM</div>
                 </div>
                 <div class="transaction-amount amount-paid">- $1,875.50</div>
-               </div>
-            </div>
-           </div>
-
-           <!-- Expensive Section -->
-            <div class="card expenses-card">
-              <div class="card-header">
-                <div class="card-title">Monthly Spending</div>
-                <div class="card-action">⦁⦁⦁</div>
-              </div>
-
-              <div class="expenses-chart">
-                <div class="chart-dount"></div>
-                <div class="chart-center">
-                  <div class="chart-percentage">73.<span>2%</span></div>
-                  <div class="chart-label">Optimal Range</div>
-                </div>
-              </div>
-              <div class="expenses-footer">
-                <div class="expenses-total">
-                  <div class="expense-total-label">Total Spent</div>
-                  <div class="expense-total-amount">$2,579.45</div>
-                </div>
               </div>
             </div>
+          </div>
 
+          <!-- Expensive Section -->
+          <div class="card expenses-card">
+            <div class="card-header">
+              <div class="card-title">Monthly Spending</div>
+              <div class="card-action">⦁⦁⦁</div>
+            </div>
+
+            <div class="expenses-chart">
+              <div class="chart-dount"></div>
+              <div class="chart-center">
+                <div class="chart-percentage">73.<span>2%</span></div>
+                <div class="chart-label">Optimal Range</div>
+              </div>
+            </div>
+            <div class="expenses-footer">
+              <div class="expenses-total">
+                <div class="expense-total-label">Total Spent</div>
+                <div class="expense-total-amount">$2,579.45</div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>

@@ -16,7 +16,7 @@
 
   /* Text Colors */
   --text-primary: #2d3748;
-  --text-secondary: #4a5568;
+  --text-secondary: #4a5569;
   --text-tertiary: #718096;
   --text-light: #a0aec0;
 
@@ -374,6 +374,11 @@ ul {
 .card-action:hover {
   color: var(--primary-color);
   background: var(--bg-secondary);
+}
+
+.gray-mode .card-action:hover {
+  color: var(--primary-color);
+  background: #151a24;
 }
 
 /* Debit Card */
@@ -875,5 +880,18 @@ ul {
   font-weight: var(--font-weight-bold);
   color: var(--text-primary);
   font-size: var(--font-size-md);
+}
 
+.dark-mode {
+  background: black;
+  color: var(--text-secondary);
+}
+
+.gray-mode {
+  background: #171717;
+  color: var(--text-secondary);
+}
+
+.text-dark-mode {
+  color: var(--text-secondary);
 }
